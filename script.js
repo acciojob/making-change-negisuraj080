@@ -6,8 +6,8 @@ const makeChange = (c) => {
   const pennyValue = 1;
 
   // Initialize coin counts
-  let quarters = Math.floor(amount / quarterValue);
-  let remainder = amount % quarterValue;
+  let quarters = Math.floor(c/ quarterValue);
+  let remainder = c % quarterValue;
 
   let dimes = Math.floor(remainder / dimeValue);
   remainder %= dimeValue;
@@ -30,4 +30,4 @@ const makeChange = (c) => {
 
 // Do not the change the code below
 const c = prompt("Enter c: ");
-alert(JSON.stringify(makeChange(c)));
+lert(JSON.stringify(makeChange(c)));
